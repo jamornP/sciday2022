@@ -15,13 +15,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <div class="collapse navbar-collapse" id="navbarScroll" style="height: 80px; background-color:rgb(2,29,75);">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 400px;">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/science/sciday/pages/"><i class='bx bx-home-circle' ></i> หน้าหลัก</a>
                 </li>
                 <!-- $_SESSION['role']=='member' OR $_SESSION['role']=='chairman' -->
-                <?php if($_SESSION['role']=='member' OR $_SESSION['role']=='chairman' OR 1==1){ ?>
+                <?php ?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class='bx bx-edit-alt'></i> กิจกรรม
@@ -32,15 +32,15 @@
                                 foreach($activitys as $activity){
                                     $activitty = base64_encode($activity['id']);
                                     echo "
-                                        <li><a class='dropdown-item fs-18' href='{$activity['link']}?activity={$activitty}'><i class='bx bx-chevron-right-circle' ></i> {$activity['name']}</a></li>
+                                        <li><a class='dropdown-item fs-18' href='{$activity['link']}'><i class='bx bx-chevron-right-circle' ></i> {$activity['name']}</a></li>
                                     ";
                                 }
                             ?>
                         </ul>
                     </li>
-                <?php } ?> 
+                <?php ?> 
                 <?php if($_SESSION['role']=='committee' OR $_SESSION['role']=='chairman'){ ?>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class='bx bx-edit-alt'></i> ทีมที่สมัคร <?php //echo $_SESSION['activity'];?>
                     </a>
@@ -55,10 +55,10 @@
                         ?>
                         >
                     </ul>
-                </li>
+                </li> -->
                 <?php } ?>
                 <?php if($_SESSION['role']=='chairman'){ ?>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class='bx bx-edit-alt'></i> สรุปผลการแข่งขัน
                     </a>
@@ -73,7 +73,7 @@
                         ?>
                         >
                     </ul>
-                </li>
+                </li> -->
                 <?php } ?>
             </ul>
             <div class="d-flex">
