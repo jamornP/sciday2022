@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="../lib/fullcalendar/fullcalendar.css">
 <link rel="stylesheet" href="../lib/fullcalendar/fullcalendar.print.css" media="print">
 <link rel="stylesheet" href="../theme/css/bootstrap-theme.css">
+<link rel="stylesheet" href="../theme/css/style.css">
 <link rel="stylesheet" href="../lib/dropzone/min/dropzone.min.css">
 
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>

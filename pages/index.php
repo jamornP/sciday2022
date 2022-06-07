@@ -10,7 +10,7 @@
     <?php require $_SERVER['DOCUMENT_ROOT']."/sciday2022/components/link.php"?>
 </head>
 
-<body class="font-prompt fs-18 wave-bg">
+<body class="font-prompt fs-18 wave-bg" >
     <?php require $_SERVER['DOCUMENT_ROOT']."/sciday2022/components/navbar.php"?>
     <!-- <h1>Sciday-2022</h1> -->
     <div class="container mt-3">
